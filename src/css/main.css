@@ -61,10 +61,17 @@
     font-size: 16px;
   }
 }
+.mr {
+  margin-right: 60px;
+}
+
 @media screen and (max-width: 500px) {
   .title {
     transform: translateX(-25px);
     margin-bottom: 10px;
+  }
+  .title:hover {
+    animation: none;
   }
 
   .main-nav {
@@ -84,6 +91,29 @@
   .nav-link {
     margin-bottom: 5px;
   }
+}
+.hero {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 600px;
+}
+.hero_content {
+  color: dimgray;
+  margin-top: 50px;
+  padding: 30px;
+  font-family: "Cookie", cursive;
+}
+.hero_content_desc {
+  font-size: 32px;
+}
+.hero_content_title {
+  font-size: 56px;
+}
+.hero_content_test {
+  font-size: 26px;
 }
 
 /*# sourceMappingURL=main.css.map */
