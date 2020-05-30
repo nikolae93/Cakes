@@ -62,7 +62,7 @@
   }
 }
 .mr {
-  margin-right: 60px;
+  margin-right: 150px;
 }
 
 @media screen and (max-width: 500px) {
@@ -105,6 +105,8 @@
   margin-top: 50px;
   padding: 30px;
   font-family: "Cookie", cursive;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .hero_content_desc {
   font-size: 32px;
@@ -114,6 +116,53 @@
 }
 .hero_content_test {
   font-size: 26px;
+}
+.hero_content_btns {
+  margin-top: 40px;
+}
+.hero_img {
+  flex-grow: 0;
+  flex-shrink: 2;
+}
+
+.btn_action {
+  width: 180px;
+  height: 40px;
+  color: whitesmoke;
+  background-color: plum;
+  border: none;
+  border-radius: 10px;
+  transition: all 1s;
+}
+.btn_action:hover {
+  color: plum;
+  background-color: whitesmoke;
+}
+.btn_action a {
+  color: inherit;
+}
+
+.btn_info {
+  width: 180px;
+  height: 40px;
+  color: plum;
+  background-color: whitesmoke;
+  border: 3px solid plum;
+  border-radius: 10px;
+  margin-left: 30px;
+  transition: all 1s;
+}
+.btn_info:hover {
+  background-color: plum;
+  color: whitesmoke;
+}
+.btn_info a {
+  color: inherit;
+}
+
+button a {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -11,6 +11,8 @@
         margin-top: 50px;
         padding: 30px;
         font-family: $font;
+        flex-grow: 1;
+        flex-shrink: 1;
 
      &_desc{
          font-size: 32px; 
@@ -24,7 +26,60 @@
         font-size: 26px; 
      }
      
-
+     &_btns{
+         margin-top: 40px;
+     }
 
     }
+
+    &_img{
+        flex-grow: 0;
+        flex-shrink: 2;
+    }
+
+}
+
+.btn_action{
+    width: 180px;
+    height: 40px;
+    color: $color-prim;
+    background-color: $color-sec;
+    border: none;
+    border-radius: 10px;
+    transition: all 1s;
+
+    &:hover{
+        color: $color-sec;
+        background-color: $color-prim;
+    }
+
+    a{
+        color: inherit;
+    }
+
+}
+
+.btn_info{
+    width: 180px;
+    height: 40px;
+    color: $color-sec;
+    background-color: $color-prim;
+    border: 3px solid $color-sec;
+    border-radius: 10px;
+    margin-left: 30px;
+    transition: all 1s;
+
+    &:hover{
+        background-color: $color-sec;
+        color: $color-prim;
+    }
+
+    a{
+        color: inherit;
+    }
+}
+
+button a {
+    text-decoration: none;
+    text-transform: uppercase;
 }
