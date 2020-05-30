@@ -41,7 +41,7 @@
     color: dimgray;
   }
   50% {
-    font-size: 50px;
+    font-size: 43px;
     color: plum;
   }
   100% {
@@ -211,6 +211,162 @@ button a {
   font-size: 70px;
   color: plum;
   margin-bottom: 15px;
+}
+
+.equ {
+  justify-self: flex-end !important;
+}
+
+.feat {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+.feat_del {
+  flex-basis: 50%;
+  justify-self: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.feat_del p {
+  font-family: "Cookie", cursive;
+  font-size: 18px;
+  color: dimgray;
+}
+.feat_fe {
+  flex-basis: 50%;
+  justify-self: center;
+}
+.feat_fe_title {
+  height: 50px;
+  font-family: "Cookie", cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: dimgray;
+}
+.feat_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.feat_grid_el {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 150px;
+}
+.feat_grid_el i {
+  font-size: 22px;
+  color: dimgray;
+}
+.feat_grid_el p {
+  width: 60%;
+  font-size: 22px;
+  color: dimgray;
+  font-family: "Cookie", cursive;
+}
+
+.assort {
+  margin-top: 70px;
+  height: 900px;
+}
+.assort_grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  height: 800px;
+  overflow: hidden;
+}
+.assort_grid_el {
+  z-index: 1;
+  overflow: hidden;
+}
+.assort_grid_el:hover {
+  transform: scale(1.05);
+  z-index: 0;
+}
+.assort_grid_el_title {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 60px;
+  color: black;
+  font-family: "Cookie", cursive;
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.404);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.assort_grid_el_title h4 {
+  text-align: center;
+}
+.assort_title {
+  height: 50px;
+  font-family: "Cookie", cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: dimgray;
+}
+
+.ass_el_tit {
+  font-family: "Cookie", cursive;
+  display: inline;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.btn-align {
+  margin-left: 0 !important;
+  position: relative;
+  top: 260px;
+  left: 30%;
+}
+
+#ass1 {
+  background-image: url("../../src/img/t1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ass2 {
+  background-image: url("../../src/img/t2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ass3 {
+  background-image: url("../../src/img/t3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ass4 {
+  background-image: url("../../src/img/t4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ass5 {
+  background-image: url("../../src/img/t5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ass6 {
+  background-image: url("../../src/img/t6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

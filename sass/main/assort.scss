@@ -1,0 +1,111 @@
+
+.assort{
+
+    margin-top: 70px;
+    height: 900px;
+
+    &_grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3,1fr);
+        height: 800px;
+
+        overflow: hidden;
+
+        &_el{
+            // position: absolute;
+            z-index: 1;
+            overflow: hidden;
+            // transition: transform 1s;
+          
+           
+            &:hover{
+                transform: scale(1.05);
+                z-index: 0;
+            }
+        
+
+            &_title{
+                position: relative;
+                top: 0;
+                left: 0;
+                height: 60px;
+                color: black;
+                font-family: $font;
+                width: 100%;
+                background-color: rgba(245, 245, 245, 0.404);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & h4{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &_title{
+        height: 50px;
+        font-family: $font;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 30px;
+        color: $color-txt;
+    }
+
+}
+
+.ass_el_tit{
+    font-family: $font;
+    display: inline;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+
+}
+
+.btn-align{
+    margin-left: 0 !important;
+    position: relative;
+    top: 260px;
+    left: 30%;
+    // top:260px;
+    // left: 120px;
+}
+
+#ass1{
+    background-image: url("../../src/img/t1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ass2{
+    background-image: url("../../src/img/t2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ass3{
+    background-image: url("../../src/img/t3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ass4{
+    background-image: url("../../src/img/t4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ass5{
+    background-image: url("../../src/img/t5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ass6{
+    background-image: url("../../src/img/t6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
