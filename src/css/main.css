@@ -133,6 +133,7 @@
   border: none;
   border-radius: 10px;
   transition: all 1s;
+  margin-left: 30px;
 }
 .btn_action:hover {
   color: plum;
@@ -163,6 +164,53 @@
 button a {
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.info {
+  height: 300px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.info_title {
+  height: 50px;
+  font-family: "Cookie", cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: dimgray;
+}
+.info_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  flex-grow: 1;
+  flex-basis: 1;
+  flex-shrink: 1;
+}
+.info_cont h5 {
+  font-family: "Cookie", cursive;
+  font-size: 28px;
+  color: dimgray;
+  margin-bottom: 10px;
+}
+.info_cont p {
+  font-family: "Cookie", cursive;
+  font-size: 18px;
+  color: dimgray;
+}
+.info_wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  padding: 0 10px;
+}
+.info_wraper i {
+  font-size: 70px;
+  color: plum;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
