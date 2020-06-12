@@ -58,6 +58,7 @@
 
     .title{
         font-size: 32px;
+        margin: 5px 0;
 
         &:hover{
             animation: none;
@@ -71,13 +72,13 @@
 }
 
 .mr{
-    margin-right: 150px;
+    margin-right: 40px;
 }
 
 @media screen and (max-width:500px){
 
     .title{
-        transform: translateX(-25px);
+      
         margin-bottom: 10px;
 
         &:hover{
@@ -89,7 +90,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 150px;
+        height: 250px;
     }
 
     .nav-cont{
@@ -100,7 +101,11 @@
     }
 
     .nav-link{
-        margin-bottom: 5px;
+       margin:5px 0;
+    }
+
+    .mr{
+        margin-right: 0px;
     }
 
 }

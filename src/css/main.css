@@ -52,6 +52,7 @@
 @media screen and (max-width: 700px) {
   .title {
     font-size: 32px;
+    margin: 5px 0;
   }
   .title:hover {
     animation: none;
@@ -62,12 +63,11 @@
   }
 }
 .mr {
-  margin-right: 150px;
+  margin-right: 40px;
 }
 
 @media screen and (max-width: 500px) {
   .title {
-    transform: translateX(-25px);
     margin-bottom: 10px;
   }
   .title:hover {
@@ -78,7 +78,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 250px;
   }
 
   .nav-cont {
@@ -89,7 +89,11 @@
   }
 
   .nav-link {
-    margin-bottom: 5px;
+    margin: 5px 0;
+  }
+
+  .mr {
+    margin-right: 0px;
   }
 }
 .hero {
@@ -166,6 +170,64 @@ button a {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1150px) {
+  .hero_content .btn_action,
+.hero_content .btn_info {
+    margin-top: 30px;
+  }
+
+  .hero_content {
+    padding: 12px;
+  }
+  .hero_content_desc {
+    font-size: 24px;
+  }
+  .hero_content_title {
+    font-size: 32px;
+  }
+  .hero_content_test {
+    font-size: 18px;
+  }
+
+  .btn_action,
+.btn_info {
+    width: 120px;
+    height: 30px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero_content {
+    width: 45%;
+  }
+
+  .hero_img {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    height: 150vh;
+  }
+
+  .hero_content {
+    margin-top: 0;
+    width: 100%;
+    height: 200px;
+  }
+
+  .hero_content_btns {
+    margin: 0;
+  }
+
+  .hero_img {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 50vh;
+  }
+}
 .info {
   height: 300px;
   width: 100%;
