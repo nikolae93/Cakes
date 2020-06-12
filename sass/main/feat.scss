@@ -70,3 +70,37 @@
    }
 }
 
+@media screen and (max-width:900px){
+
+  .feat_del p {
+      font-size: 14px;
+  }
+
+  .feat_fe_title{
+      margin-bottom: 7px;
+  }
+
+}
+
+@media screen and (max-width:700px){
+    .feat{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:500px){
+    .feat{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:380px){
+    .feat{
+        height: 80vh;
+        margin-top: 20px;
+    }
+}
+

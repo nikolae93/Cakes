@@ -61,3 +61,33 @@
 .equ{
     justify-self: flex-end !important;
 }
+
+@media screen and (max-width:800px){
+
+    .info{
+        height: 70vh;
+    }
+
+    .info_wraper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        & i{
+            font-size: 48px;
+        }
+    }
+
+    .info_cont{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .info{
+        height: 100vh;
+    }
+
+}

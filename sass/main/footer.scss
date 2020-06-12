@@ -2,7 +2,7 @@
 .footer{
 
     margin-top: 30px;
-    color: white;
+    color: white !important;
      height: 20vh;
      background-color: $color-txt;
      display: flex;
@@ -15,6 +15,12 @@
 
         a{
             transition: all 1s linear;
+            text-decoration: none;
+            color: $color-sec;
+        }
+
+        a:active,a:visited{
+            color: white;
         }
 
         a:hover{
@@ -55,5 +61,16 @@
     transition: 0.5s linear;
     &:hover{
        color:  #00acee;
+    }
+}
+
+@media screen and (max-width:800px){
+    .footer{
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        
     }
 }

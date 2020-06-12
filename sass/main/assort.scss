@@ -109,3 +109,47 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+@media screen and(max-width:900px){
+
+  .assort{
+      height: 300vh;
+  }
+
+  .assort_grid{
+
+    height: 90%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .btn-align{
+
+ top:300px;
+ left: 40%;
+
+  }
+
+}
+
+@media screen and(max-width:750px){
+
+    .assort{
+        height: 700vh;
+    }
+
+    .assort_grid{
+        height: 95%;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-columns: 1fr  ;
+      }
+
+      .btn-align{
+
+        top:480px;
+        left: 40%;
+       
+         }
+
+}
