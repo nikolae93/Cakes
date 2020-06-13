@@ -4,7 +4,8 @@
   "description": "Cakes website",
   "main": "app.js",
   "scripts": {
-    "compile:sass":"sass sass/main/main.scss src/css/main.css"
+    "compile:sass_main":"sass sass/main/main.scss src/css/main.css",
+    "compile:sass":"sass sass/contact/main.scss src/css/contact.css"
   },
   "author": "Nikola Ekmedzic",
   "license": "ISC",

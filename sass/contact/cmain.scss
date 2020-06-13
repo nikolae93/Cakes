@@ -1,0 +1,31 @@
+.cmain{
+
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-top: 30px;
+padding: 0 10px;
+
+&_form{
+    height: 100%;
+    width: 50%;
+    background-color: $color-prim;
+    padding: 15px;
+}
+
+
+&_map{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+}
+
+
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+  }

@@ -1,0 +1,115 @@
+
+
+.main-nav{
+
+   background-color:  $color-prim;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 50px;
+   width: 100%;
+
+}
+
+.title{
+    color: $color-txt;
+    margin-left: 40px;
+    font-family: $font;
+    font-size: 40px;
+
+    &:hover{
+        animation: titleUp 6s linear infinite;
+    }
+}
+
+.nav-link{
+    color: $color-txt;
+    text-decoration: none;
+    margin-right: 15px;
+    font-family: $font;
+    font-size: 22px;
+
+    &:hover{
+        color: $color-sec;
+        transition: color 1s;
+    }
+
+}
+
+@keyframes titleUp {
+
+     0%{
+        font-size: 40px;
+        color: $color-txt;
+     }
+
+     50%{
+        font-size: 43px;
+        color: $color-sec;
+     }
+
+     100%{
+        font-size: 40px;
+        color: $color-txt;
+     }
+}
+
+@media screen and (max-width:700px){
+
+    .title{
+        font-size: 32px;
+        margin: 5px 0;
+
+        &:hover{
+            animation: none;
+        }
+    }
+
+    .nav-link{
+        font-size: 16px;
+    }
+
+}
+
+.mr{
+    margin-right: 40px;
+}
+
+@media screen and (max-width:500px){
+
+    .title{
+      
+        margin-bottom: 10px;
+
+        &:hover{
+            animation: none;
+        }
+    }
+
+    .main-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+    }
+
+    .nav-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-link{
+       margin:5px 0;
+    }
+
+    .mr{
+        margin-right: 0px;
+    }
+
+}
+
+#curr_page{
+    color: $color-sec;
+}

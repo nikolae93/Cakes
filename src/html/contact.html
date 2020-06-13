@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/71db0aa92c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+    <title>Contact us</title>
+</head>
+<body>
+    
+    <nav class="main-nav">
+
+        <h1 class="title">Bucko's Cakes</h1> 
+        
+        <div class="nav-cont">
+
+            <a href="/" class="nav-link">Home</a>
+            <a href="/" class="nav-link">About us</a>
+            <a href="/" class="nav-link">Assortment</a>
+            <a href="/" class="nav-link">Delivery</a>
+            <a href="#" class="nav-link mr" id='curr_page'>Contact us</a>
+
+        </div>
+        
+    </nav>
+
+    <!-- Nav End -->
+
+     <section class="cmain"> 
+           
+           <div class="cmain_form">
+                
+            <div class="cmain_form_info">
+                <h1>Contact us</h1>
+                <p>Adress: Kaciceva bb, Belgrade, Serbia </p>
+                <p>Phone number: +38111992239</p>
+                <h1>Working hours</h1>
+                <p>Mon-Fri: 9-18h</p>
+                <p>Sat-Sun: 10-15h</p>
+            </div>
+             
+            <h1>Send us a message</h1>
+
+             <form action="">
+
+                <label for="name">Name (required)</label>
+                <input type="text" name="name"   minlength="3" placeholder="Enter your name" required><br>
+
+                <label for="email">Email (required)</label>
+                <input type="email" name="email"   placeholder="Enter your email" required><br>
+
+                <label for="phone">Phone number</label>
+                <input type="text" name="phone"  placeholder="Enter the phone number"><br>
+
+                <textarea id="message" name="message" rows="14" cols="70" placeholder="Enter the message"
+                 required></textarea>
+                 <br>
+
+                 <input type="submit" placeholder="Send">
+
+             </form>
+
+           </div>
+   
+           <div class="cmain_map">
+
+            <div id="map" class="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([20.5095453,44.7861678]),
+          zoom: 16
+        })
+      });
+    </script>
+
+           </div>
+
+     </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="footer_des">
+           <p>Created and designed by <a href="#">Nikola Ekmedzic</a></p>
+        </div>
+  
+        <div class="footer_copy">
+           <p>Copyright &copy Bucko's cakes 2020 </p>
+        </div>
+  
+        <div class="footer_social">
+          <i  class="fab fa-facebook-square" id="facebook"></i>
+          <i class="fab fa-instagram-square" id="instagram"></i>
+          <i class="fab fa-twitter" id="twitter"></i>
+        </div>
+  
+      </footer>
+
+</body>
+</html>
